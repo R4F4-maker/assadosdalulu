@@ -1,60 +1,110 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Assados da Lulu</title>
-  <style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assados da Lulu - Link</title>
+
+<style>
     body {
-      font-family: Arial, sans-serif;
-      background: #ffe8d2;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-      color: #5a341e;
+        margin: 0;
+        padding: 0;
+        background: #F2C300; /* fundo amarelo */
+        font-family: "Poppins", Arial, sans-serif;
+        text-align: center;
     }
-    .container {
-      max-width: 500px;
-      margin: 0 auto;
-      padding: 20px;
+
+    /* Logo */
+    .logo {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        margin: 40px auto 20px auto;
+        object-fit: cover;
     }
-    img {
-      width: 150px;
-      border-radius: 50%;
-      margin-top: 20px;
-      border: 3px solid #d39b68;
+
+    h2 {
+        font-size: 28px;
+        margin: 5px 0 10px 0;
+        font-weight: 700;
+        color: white;
     }
-    h1 {
-      margin-top: 10px;
-      font-size: 28px;
+
+    p.sub {
+        font-size: 16px;
+        color: white;
+        margin-bottom: 40px;
     }
+
+    /* Botões com sombra estilo Linktree */
     .btn {
-      display: block;
-      text-decoration: none;
-      background: #d49863;
-      color: #fff;
-      padding: 16px;
-      margin: 12px 0;
-      border-radius: 10px;
-      font-size: 18px;
-      transition: 0.2s;
+        width: 85%;
+        max-width: 420px;
+        background: white;
+        color: black;
+        border: 4px solid black;
+        border-radius: 35px;
+        padding: 16px;
+        margin: 15px auto;
+        text-decoration: none;
+        font-size: 18px;
+        display: block;
+        font-weight: 600;
+        transition: 0.2s;
+
+        /* SOMBRA IGUAL AO DO PRINT */
+        box-shadow:
+            inset 0 0 10px rgba(0,0,0,0.35), /* sombra interna */
+            0 6px 12px rgba(0,0,0,0.35);     /* sombra externa */
     }
+
     .btn:hover {
-      background: #b77b4d;
+        transform: scale(1.03);
     }
-  </style>
+
+    /* Ícones sociais */
+    .icons {
+        margin-top: 40px;
+    }
+
+    .icons img {
+        width: 40px;
+        margin: 0 15px;
+        filter: invert(1); /* deixa os ícones brancos */
+    }
+
+    footer {
+        margin-top: 50px;
+        font-size: 14px;
+        opacity: 0.8;
+        color: #fff;
+    }
+</style>
 </head>
 <body>
-  <div class="container">
-<img src="lulu.jpeg" alt="Foto Perfil" style="width:200px;">
-    <h1>Assados da Lulu</h1>
 
-    <a class="btn" href="#" target="_blank">📱 Instagram</a>
-    <a class="btn" href="#" target="_blank">📘 Facebook</a>
-    <a class="btn" href="#" target="_blank">📲 Cardápio iFood</a>
-    <a class="btn" href="#" target="_blank">📝 Cardápio Anota Aí</a>
-    <a class="btn" href="#" target="_blank">🔥 Ofertas e Promoções</a>
-    <a class="btn" href="#" target="_blank">💰 Cashback</a>
-  </div>
+    <!-- Logo -->
+    <img src="SUA-LOGO-AQUI.png" class="logo" alt="Logo">
+
+    <!-- Nome e descrição -->
+    <h2>@assadosdalulu</h2>
+    <p class="sub">Assados da Lulu – Sabor de Verdade</p>
+
+    <!-- Botões -->
+    <a class="btn" href="#">Cardápio Digital – pedir online</a>
+    <a class="btn" href="#">Encomendas – Ceias e Assados</a>
+    <a class="btn" href="#">Whatsapp – mande um oi 😊</a>
+
+    <!-- Ícones sociais -->
+    <div class="icons">
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733585.png"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png"></a>
+    </div>
+
+    <footer>
+        © 2025 Assados da Lulu
+    </footer>
+
 </body>
 </html>
