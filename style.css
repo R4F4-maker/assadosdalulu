@@ -32,7 +32,6 @@ body {
     margin: 12px auto 4px auto; /* menor distância entre logo e texto */
     object-fit: cover;
     display: block;
-    border: 6px solid rgba(0,0,0,0.08); /* leve contorno para destacar */
     background: transparent;
 }
 
