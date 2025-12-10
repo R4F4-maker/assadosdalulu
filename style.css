@@ -1,74 +1,102 @@
+/* =========================
+   Estilos principais
+   ========================= */
+
 body {
-    margin: 0;
-    padding: 0;
-    background: #F2C300;
-    font-family: "Poppins", Arial, sans-serif;
-    text-align: center;
+    margin: 0; /* remove margens padrão do navegador */
+    padding: 0; /* remove padding padrão do navegador */
+    background: #F2C300; /* cor de fundo (amarelo tema Assados da Lulu) */
+    font-family: "Poppins", Arial, sans-serif; /* fonte principal, fallback para Arial/sans-serif */
+    text-align: center; /* centraliza textos em elementos de linha (por ex. h2, p) */
 }
 
-/* Logo */
+/* =========================
+   LOGO
+   ========================= */
+
 .logo {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    margin: 10px auto -10px auto;
-    object-fit: cover;
+    width: 200px; /* largura fixa do avatar/logo */
+    height: 200px; /* altura fixa do avatar/logo (mantém proporção quadrada) */
+    border-radius: 50%; /* deixa a imagem redonda (círculo perfeito) */
+    margin: 10px auto -10px auto; 
+        /* margem: 
+           10px em cima, auto nas laterais (centraliza a imagem),
+           -10px embaixo (puxa o elemento seguinte pra cima, reduz espaçamento) */
+    object-fit: cover; /* preenche a caixa cortando a imagem mantendo proporção sem distorcer */
 }
+
+/* =========================
+   TÍTULO
+   ========================= */
 
 h2 {
-    font-size: 36px;
-    margin: 0 0 0px 0; /* sem margem inferior */
-    font-weight: 700;
-    color: white;
+    font-size: 36px; /* tamanho da fonte do título */
+    margin: 0 0 0px 0; /* margem: topo 0, direita 0, baixo 0px, esquerda 0 => sem espaço inferior */
+    font-weight: 700; /* peso da fonte (negrito forte) */
+    color: white; /* cor do texto (branco) */
 }
+
+/* =========================
+   SUBTÍTULO / PARÁGRAFO
+   ========================= */
 
 p.sub {
-    font-size: 20px;
-    color: white;
-    margin-top: 0;     /* remove o espaço superior */
-    margin-bottom: 10px; /* você pode diminuir mais se quiser */
+    font-size: 20px; /* tamanho da fonte do parágrafo/subtítulo */
+    color: white; /* cor do texto (branco) */
+    margin-top: 0;     /* remove espaço superior padrão do parágrafo (ficar grudado no h2) */
+    margin-bottom: 10px; /* espaço inferior entre o parágrafo e o próximo elemento (botões) */
 }
 
+/* =========================
+   BOTÕES (estilo Linktree com sombra)
+   ========================= */
 
-/* Botões estilo Linktree com sombra */
 .btn {
-    width: 85%;
-    max-width: 420px;
-    background: white;
-    color: black;
-    border: 4px solid black;
-    border-radius: 35px;
-    padding: 16px;
-    margin: 15px auto;
-    text-decoration: none;
-    font-size: 18px;
-    display: block;
-    font-weight: 600;
-    transition: 0.2s;
+    width: 85%; /* largura relativa ao container (responsivo) */
+    max-width: 420px; /* largura máxima em telas grandes para não esticar demais */
+    background: white; /* fundo branco do botão */
+    color: black; /* cor do texto no botão */
+    border: 3px solid black; /* borda preta e grossa */
+    border-radius: 10px; /* cantos arredondados (efeito pílula) */
+    padding: 16px; /* espaço interno (aumenta área clicável) */
+    margin: 15px auto; /* margem vertical 15px e auto nas laterais (centraliza) */
+    text-decoration: none; /* remove sublinhado de links */
+    font-size: 16px; /* tamanho da fonte no botão */
+    display: block; /* transforma o link em bloco (toda a área é clicável e empilha verticalmente) */
+    font-weight: 600; /* peso da fonte (semibold) */
+    transition: 0.2s; /* transição suave para transform/box-shadow ao passar o mouse */
 
     box-shadow:
-        inset 0 0 10px rgba(0, 0, 0, 0.35),
-        0 6px 12px rgba(0, 0, 0, 0.35);
+        inset 0 0 10px rgba(0, 0, 0, 0.35), /* sombra interna: cria profundidade "para dentro" */
+        0 6px 12px rgba(0, 0, 0, 0.35);    /* sombra externa: levanta o botão da página */
 }
 
+/* Efeito quando o usuário passa o mouse sobre o botão */
 .btn:hover {
-    transform: scale(1.03);
+    transform: scale(1.03); /* aumenta levemente (3%) para dar feedback visual */
 }
 
-/* Ícones sociais */
+/* =========================
+   ÍCONES SOCIAIS
+   ========================= */
+
 .icons {
-    margin-top: 40px;
+    margin-top: 40px; /* espaço acima do bloco de ícones */
 }
 
 .icons img {
-    width: 40px;
-    margin: 0 15px;
-    filter: invert(1);
+    width: 40px; /* largura dos ícones sociais */
+    margin: 0 15px; /* espaço horizontal entre os ícones (0 topo/baixo, 15px laterais) */
+    filter: invert(1); /* inverte cores do ícone (útil para ícones escuros tornarem-se brancos) */
 }
 
+/* =========================
+   RODAPÉ
+   ========================= */
+
 footer {
-    margin-top: 50px;
-    font-size: 14px;
-    opacity: 0.8;
-    color: #fff;
+    margin-top: 50px; /* separação entre os ícones / conteúdo e o rodapé */
+    font-size: 14px; /* tamanho da fonte do rodapé */
+    opacity: 0.8; /* leve transparência no texto do rodapé */
+    color: #fff; /* cor do texto (branco) */
 }
