@@ -1,125 +1,74 @@
-
-/* ===============================
-   style.css — Assados da Lulu
-   =============================== */
-
-/* --- Reset / base --- */
-* {
-    box-sizing: border-box;
-}
-html, body {
+body {
     margin: 0;
     padding: 0;
-    height: 100%;
-}
-
-/* === LAYOUT GERAL TESTE === */
-body {
-    background: #F2C300; /* amarelo */
+    background: #F2C300;
     font-family: "Poppins", Arial, sans-serif;
     text-align: center;
-    -webkit-font-smoothing:antialiased;
-    -moz-osx-font-smoothing:grayscale;
-    color: #111;
-    padding-bottom: 40px;
 }
 
-/* === LOGO === */
+/* Logo */
 .logo {
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-    margin: 12px auto 4px auto; /* menor distância entre logo e texto */
+    margin: 10px auto -10px auto;
     object-fit: cover;
-    display: block;
-    background: transparent;
 }
 
-/* === TITULO / SUBTITULO === */
 h2 {
-    font-size: 28px;
-    margin: 0 0 4px 0;   /* sem margem superior, muito perto do logo */
+    font-size: 36px;
+    margin: 0 0 0px 0; /* sem margem inferior */
     font-weight: 700;
-    color: #fff;
-    letter-spacing: 0.2px;
+    color: white;
 }
 
 p.sub {
     font-size: 20px;
-    color: #fff;
-    margin: 0 0 18px 0;
-    opacity: 0.98;
+    color: white;
+    margin-top: 0;     /* remove o espaço superior */
+    margin-bottom: 10px; /* você pode diminuir mais se quiser */
 }
 
-/* === BOTÕES (estilo Linktree) === */
+
+/* Botões estilo Linktree com sombra */
 .btn {
-    position: relative;
-    display: inline-block;
-    background: #ff8c00;
-    color: #fff;
-    padding: 12px 18px;
-    border-radius: 8px;
+    width: 85%;
+    max-width: 420px;
+    background: white;
+    color: black;
+    border: 4px solid black;
+    border-radius: 35px;
+    padding: 16px;
+    margin: 15px auto;
     text-decoration: none;
-    font-weight: bold;
-    text-align: center;
-}
-
-.btn span {
+    font-size: 18px;
     display: block;
-    text-align: center;
+    font-weight: 600;
+    transition: 0.2s;
+
+    box-shadow:
+        inset 0 0 10px rgba(0, 0, 0, 0.35),
+        0 6px 12px rgba(0, 0, 0, 0.35);
 }
 
-.btn .icon {
-    position: absolute;
-    left: 12px;
-    top: 50%;
-    transform: translateY(-50%);
-    height: 22px;
-}
-
-/* Hover / foco */
 .btn:hover {
     transform: scale(1.03);
-    box-shadow: inset 0 0 10px rgba(0,0,0,0.25), 0 10px 18px rgba(0,0,0,0.25);
 }
 
-.btn:focus-visible {
-    outline: 3px solid rgba(0,0,0,0.12);
-    border-color: #000;
-}
-
-/* === ÍCONES SOCIAIS (rodapé) === */
+/* Ícones sociais */
 .icons {
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .icons img {
-    width: 36px;
-    margin: 0 12px;
-    filter: invert(1); /* deixa brancos se preferir */
+    width: 40px;
+    margin: 0 15px;
+    filter: invert(1);
 }
 
-/* === RODAPÉ === */
 footer {
-    margin-top: 32px;
+    margin-top: 50px;
     font-size: 14px;
+    opacity: 0.8;
     color: #fff;
-    opacity: 0.9;
-}
-
-/* === MOBILE / RESPONSIVO === */
-@media (max-width: 420px) {
-    .logo { width: 150px; height: 150px; margin-top: 8px; }
-    h2 { font-size: 24px; }
-    p.sub { font-size: 18px; margin-bottom: 12px; }
-    .btn { font-size: 16px; padding: 10px 14px; gap: 10px; }
-    .btn-icon { width: 20px; height: 20px; }
-    .icons img { width: 30px; margin: 0 8px; }
-}
-
-/* === Utility (centering) === */
-.container {
-    max-width: 980px;
-    margin: 0 auto;
-    padding: 0 12px;
 }
