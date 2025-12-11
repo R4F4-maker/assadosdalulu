@@ -103,3 +103,19 @@ footer {
     opacity: 0.8;
     color: #fff;
 }
+
+/* Ícone no canto esquerdo sem alterar o alinhamento do texto */
+.btn {
+    position: relative;   /* permite posicionar o ícone dentro */
+    text-align: center;   /* mantém o texto centralizado */
+}
+
+.icon-btn {
+    position: absolute;
+    left: 30px;   /* distância do canto esquerdo */
+    top: 50%;     /* centraliza verticalmente */
+    transform: translateY(-50%);
+    
+    width: 28px;
+    height: 28px;
+}
