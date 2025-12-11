@@ -254,13 +254,12 @@ footer {
 
     p.sub {
         font-size: 16px;
-        margin-bottom: 5px;
+        margin-bottom: 30px;
     }
 
     .btn {
         max-width: 340px;  /* 🔥 deixa o botão menor */
         padding: 14px;
-        padding-left: 50px; /* ajusta texto com ícone */
         font-size: 15px;
     }
 
@@ -278,4 +277,12 @@ footer {
     footer {
         font-size: 12px;
     }
+    
+    .container {
+    margin: 20px auto;
+    padding: 18px;
+    width: 92%;
+    border-radius: 14px;
+}
+
 }
