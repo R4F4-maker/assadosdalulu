@@ -160,7 +160,6 @@ p.sub {
     border: 3px solid #f9c402;
     border-radius: 15px;
     padding: 16px;
-    padding-left: 55px;   /* 🔥 AQUI EMPURRA O TEXTO PARA A DIREITA */
     margin: 15px auto;
     text-decoration: none;
     font-size: 16px;
@@ -237,4 +236,45 @@ footer {
     font-size: 14px;
     opacity: 0.8;
     color: #fff;
+}
+/* =========================
+   RESPONSIVIDADE PARA CELULAR
+   ========================= */
+@media (max-width: 480px) {
+
+    .logo {
+        width: 150px;
+        height: 150px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    p.sub {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .btn {
+        max-width: 340px;  /* 🔥 deixa o botão menor */
+        padding: 14px;
+        padding-left: 50px; /* ajusta texto com ícone */
+        font-size: 15px;
+    }
+
+    .icon-btn {
+        width: 24px;
+        height: 24px;
+        left: 22px; /* ícone mais próximo da borda */
+    }
+
+    .icons img {
+        width: 32px;
+        margin: 0 10px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
 }
