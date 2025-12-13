@@ -177,6 +177,17 @@ p.sub {
 }
 
 /* =========================
+   FRASE DE DESTAQUE
+   ========================= */
+.frase-destaque {
+    font-size: 18px;
+    color: white;
+    margin-top: 20px;  /* ajusta o espaço entre os botões e a frase */
+    text-align: center;
+    font-style: italic; /* itálico para destacar mais */
+}
+
+/* =========================
    ÍCONES SOCIAIS
    ========================= */
 
