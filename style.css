@@ -164,6 +164,7 @@ footer {
 
     p.sub {
         font-size: 16px;
+        margin-bottom: 30px;
     }
 
     .btn {
@@ -178,6 +179,11 @@ footer {
         left: 20px;
     }
 
+     .frase-destaque {
+        line-height: 1.4;
+        margin-top: 18px;
+    }
+    
     .icons img {
         width: 32px;
         margin: 0 10px;
