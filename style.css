@@ -179,13 +179,18 @@ p.sub {
 /* =========================
    FRASE DE DESTAQUE
    ========================= */
+   
 .frase-destaque {
     font-size: 18px;
     color: white;
-    margin-top: 20px;  /* ajusta o espaço entre os botões e a frase */
+    margin-top: 40px; /* ajusta o espaço entre os botões e a frase */
     text-align: center;
-    font-style: italic; /* itálico para destacar mais */
+    font-style: italic;
+    padding: 0 20px; /* evita texto colado na borda */
+    line-height: 1.6;
+
 }
+
 
 /* =========================
    ÍCONES SOCIAIS
@@ -278,6 +283,11 @@ footer {
         left: 22px; /* ícone mais próximo da borda */
     }
 
+    .frase-destaque {
+        line-height: 1.4;
+        margin-top: 18px;
+    }
+    
     .icons img {
         width: 32px;
         margin: 0 10px;
