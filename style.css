@@ -2,198 +2,194 @@
    ESTILO GERAL / FUNDO
    ========================= */
 body {
-    margin: 0; /* remove margens padrão do navegador */
-    padding: 0; /* remove espaçamento interno padrão */
+    margin: 0;
+    padding: 0;
+    background-image: url("imagens/fundo.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Poppins", Arial, sans-serif;
+    text-align: center;
+}
 
-    background-image: url("imagens/fundo.jpeg"); /* imagem de fundo */
-    background-size: cover; /* cobre toda a tela */
-    background-position: center; /* centraliza a imagem */
-    background-repeat: no-repeat; /* evita repetição */
-    background-attachment: fixed; /* efeito parallax (opcional) */
-
-    font-family: "Poppins", Arial, sans-serif; /* fonte principal */
-    text-align: center; /* centraliza textos */
+/* =========================
+   CONTAINER (ENQUADRAMENTO MOBILE)
+   ========================= */
+.container {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 20px 16px;
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 18px;
 }
 
 /* =========================
    LOGO
    ========================= */
 .logo {
-    width: 200px; /* tamanho da logo */
-    height: 200px; /* altura da logo */
-    border-radius: 50%; /* deixa redonda */
-    margin: 10px auto -10px auto; /* espaço acima e abaixo */
-    object-fit: cover; /* mantém proporção da imagem */
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 20px auto 10px;
+    object-fit: cover;
 }
 
 /* =========================
-   TÍTULO / NOME
+   TÍTULO
    ========================= */
 h2 {
-    font-size: 36px; /* tamanho do texto */
-    margin: 0; /* remove margem padrão */
-    font-weight: 700; /* deixa em negrito */
-    color: #f9c402; /* cor dourada */
+    font-size: 36px;
+    margin: 0;
+    font-weight: 700;
+    color: #f9c402;
 }
 
 /* =========================
    SUBTÍTULO
    ========================= */
 p.sub {
-    font-size: 20px; /* tamanho do texto */
-    color: white; /* cor branca */
-    margin-top: 0; /* espaço acima */
-    margin-bottom: 10px; /* espaço abaixo */
-    line-height: 1.6; /* espaço entre linhas */
+    font-size: 20px;
+    color: white;
+    margin-top: 6px;
+    margin-bottom: 25px;
+    line-height: 1.6;
 }
 
 /* =========================
    BOTÕES PADRÃO
    ========================= */
 .btn {
-    width: 85%; /* largura do botão */
-    max-width: 420px; /* largura máxima */
-
-    background: rgba(255, 255, 255, 0.11); /* fundo translúcido */
-    color: white; /* cor do texto */
-
-    border: 3px solid #f9c402; /* borda dourada */
-    border-radius: 15px; /* cantos arredondados */
-
-    padding: 16px; /* espaço interno */
-    margin: 15px auto; /* espaço externo */
-
-    text-decoration: none; /* remove sublinhado */
-    font-size: 16px; /* tamanho do texto */
-    font-weight: 600; /* peso da fonte */
-
-    display: block; /* ocupa a linha toda */
-    position: relative; /* necessário para o ícone */
-    text-align: center; /* centraliza o texto */
-
-    transition: 0.2s; /* animação suave */
-
+    width: 85%;
+    max-width: 420px;
+    background: rgba(255, 255, 255, 0.11);
+    color: white;
+    border: 3px solid #f9c402;
+    border-radius: 15px;
+    padding: 16px 16px 16px 16px;
+    margin: 15px auto;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    position: relative;
+    text-align: center;
+    transition: 0.2s;
     box-shadow:
-        inset 0 0 10px rgba(0, 0, 0, 0.35), /* sombra interna */
-        0 6px 12px rgba(0, 0, 0, 0.35); /* sombra externa */
+        inset 0 0 10px rgba(0, 0, 0, 0.35),
+        0 6px 12px rgba(0, 0, 0, 0.35);
 }
 
-/* efeito ao passar o mouse */
 .btn:hover {
-    transform: scale(1.03); /* aumenta levemente */
+    transform: scale(1.03);
 }
 
 /* =========================
    BOTÃO DOURADO (PRINCIPAL)
    ========================= */
 .btn-gold {
-    background: linear-gradient(
-        135deg,
-        #f9e27d, /* dourado claro */
-        #f2c94c  /* dourado médio */
-    );
-    color: #3a2c00; /* texto marrom escuro */
-    border-color: #e0b800; /* borda dourada forte */
+    background: linear-gradient(135deg, #f9e27d, #f2c94c);
+    color: #3a2c00;
+    border-color: #e0b800;
+    box-shadow:
+        inset 0 0 12px rgba(255, 255, 255, 0.35),
+        0 8px 16px rgba(0, 0, 0, 0.45);
 }
 
-/* efeito hover do botão dourado */
 .btn-gold:hover {
-    transform: scale(1.05); /* destaque maior */
+    transform: scale(1.05);
 }
 
 /* =========================
-   ÍCONE DENTRO DO BOTÃO
+   ÍCONE NO BOTÃO
    ========================= */
 .icon-btn {
-    position: absolute; /* posicionamento livre */
-    left: 30px; /* 👉 ALTERE para mover o ícone para esquerda/direita */
-    top: 50%; /* centraliza verticalmente */
-    transform: translateY(-50%); /* ajuste fino vertical */
-
-    width: 28px; /* tamanho do ícone */
+    position: absolute;
+    left: 22px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 28px;
     height: 28px;
-
-    pointer-events: none; /* evita bug de clique no ícone */
+    pointer-events: none;
 }
 
 /* =========================
-   FRASE ABAIXO DOS BOTÕES
+   FRASE DE DESTAQUE
    ========================= */
 .frase-destaque {
-    font-size: 18px; /* tamanho do texto */
-    color: white; /* cor */
-    margin-top: 40px; /* 👉 espaço entre botões e frase */
-    font-style: italic; /* itálico */
-    padding: 0 20px; /* margem lateral */
-    line-height: 1.6; /* espaço entre linhas */
+    font-size: 18px;
+    color: white;
+    margin-top: 35px;
+    font-style: italic;
+    line-height: 1.6;
+    padding: 0 20px;
 }
 
 /* =========================
    ÍCONES SOCIAIS
    ========================= */
 .icons {
-    margin-top: 40px; /* distância dos botões */
+    margin-top: 40px;
 }
 
 .icons img {
-    width: 40px; /* tamanho do ícone */
-    margin: 0 15px; /* espaço entre ícones */
-    filter: invert(1); /* deixa branco */
+    width: 40px;
+    margin: 0 15px;
+    filter: invert(1);
 }
 
 /* =========================
    RODAPÉ
    ========================= */
 footer {
-    margin-top: 50px; /* distância do conteúdo */
-    font-size: 14px; /* tamanho do texto */
-    opacity: 0.8; /* leve transparência */
-    color: #fff; /* cor branca */
+    margin-top: 40px;
+    font-size: 14px;
+    opacity: 0.8;
+    color: #fff;
 }
 
 /* =========================
-   RESPONSIVIDADE - CELULAR
+   RESPONSIVIDADE
    ========================= */
-<-- @media (max-width: 480px) {
+@media (max-width: 480px) {
 
     .logo {
-        width: 150px; /* logo menor no celular */
+        width: 150px;
         height: 150px;
     }
 
     h2 {
-        font-size: 28px; /* título menor */
+        font-size: 28px;
     }
 
     p.sub {
-        font-size: 16px; /* subtítulo menor */
-        margin-bottom: 30px; /* espaço extra antes dos botões */
+        font-size: 16px;
+        margin-bottom: 30px;
     }
 
     .btn {
-        max-width: 340px; /* botão mais estreito */
-        padding: 14px; /* menos altura */
-        font-size: 15px; /* texto menor */
+        max-width: 340px;
+        font-size: 15px;
+        padding-left: 50px;
     }
 
     .icon-btn {
-        width: 24px; /* ícone menor */
+        width: 24px;
         height: 24px;
-        left: 22px; /* 👉 ícone mais próximo da borda */
+        left: 20px;
     }
 
-    .frase-destaque {
-        margin-top: 18px; /* frase mais próxima */
-        line-height: 1.4; /* linhas mais juntas */
+     .frase-destaque {
+        line-height: 1.4;
+        margin-top: 18px;
     }
-
+    
     .icons img {
-        width: 32px; /* ícones sociais menores */
+        width: 32px;
         margin: 0 10px;
     }
 
     footer {
-        font-size: 12px; /* rodapé menor */
+        font-size: 12px;
     }
 }
--->
