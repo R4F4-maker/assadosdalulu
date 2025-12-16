@@ -1,195 +1,197 @@
 /* =========================
-   ESTILO GERAL / FUNDO
+   CONFIGURAÇÃO GERAL DA PÁGINA
    ========================= */
 body {
-    margin: 0;
-    padding: 0;
-    background-image: url("imagens/fundo.jpeg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    font-family: "Poppins", Arial, sans-serif;
-    text-align: center;
+    margin: 0; /* remove margens padrão do navegador */
+    padding: 0; /* remove espaçamento interno padrão */
+    background-image: url("imagens/fundo.jpeg"); /* imagem de fundo */
+    background-size: cover; /* cobre toda a tela */
+    background-position: center; /* centraliza a imagem */
+    background-repeat: no-repeat; /* evita repetição */
+    background-attachment: fixed; /* fundo fixo ao rolar */
+    font-family: "Poppins", Arial, sans-serif; /* fonte principal */
+    text-align: center; /* centraliza textos */
 }
 
 /* =========================
-   CONTAINER (ENQUADRAMENTO MOBILE)
+   CONTAINER PRINCIPAL (MOBILE)
    ========================= */
 .container {
-    max-width: 480px;
-    margin: 0 auto;
-    padding: 20px 16px;
-    background: rgba(0, 0, 0, 0.35);
-    border-radius: 18px;
+    max-width: 480px; /* largura máxima no celular */
+    margin: 0 auto; /* centraliza o container */
+    padding: 20px 16px; /* espaço interno */
+    background: rgba(0, 0, 0, 0.35); /* fundo escuro translúcido */
+    border-radius: 18px; /* cantos arredondados */
 }
 
 /* =========================
    LOGO
    ========================= */
 .logo {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    margin: 20px auto 10px;
-    object-fit: cover;
+    width: 200px; /* largura da logo */
+    height: 200px; /* altura da logo */
+    border-radius: 50%; /* deixa a logo redonda */
+    margin: 20px auto 10px; /* espaço: topo | lados | baixo */
+    object-fit: cover; /* ajusta imagem sem distorcer */
 }
 
 /* =========================
-   TÍTULO
+   TÍTULO (NOME DO PERFIL)
    ========================= */
 h2 {
-    font-size: 36px;
-    margin: 0;
-    font-weight: 700;
-    color: #f9c402;
+    font-size: 36px; /* tamanho do texto */
+    margin: 0; /* remove margem padrão */
+    font-weight: 700; /* texto em negrito */
+    color: #f9c402; /* cor dourada */
 }
 
 /* =========================
-   SUBTÍTULO
+   SUBTÍTULO / DESCRIÇÃO
    ========================= */
 p.sub {
-    font-size: 20px;
-    color: white;
-    margin-top: 6px;
-    margin-bottom: 25px;
-    line-height: 1.0;
+    font-size: 20px; /* tamanho da fonte */
+    color: white; /* cor branca */
+    margin-top: 6px; /* espaço acima do texto */
+    margin-bottom: 25px; /* espaço abaixo */
+    line-height: 1.2; /* espaço entre linhas */
 }
 
 /* =========================
    BOTÕES PADRÃO
    ========================= */
 .btn {
-    width: 85%;
-    max-width: 420px;
-    background: rgba(255, 255, 255, 0.11);
-    color: white;
-    border: 3px solid #f9c402;
-    border-radius: 15px;
-    padding: 16px 16px 16px 16px;
-    margin: 15px auto;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 600;
-    display: block;
-    position: relative;
-    text-align: center;
-    transition: 0.2s;
+    width: 85%; /* largura do botão */
+    max-width: 420px; /* limite máximo */
+    background: rgba(255, 255, 255, 0.11); /* fundo transparente */
+    color: white; /* cor do texto */
+    border: 3px solid #f9c402; /* borda dourada */
+    border-radius: 15px; /* cantos arredondados */
+    padding: 16px 16px 16px 50px; /* espaço interno (lado esquerdo maior p/ ícone) */
+    margin: 15px auto; /* espaço entre os botões */
+    text-decoration: none; /* remove sublinhado do link */
+    font-size: 16px; /* tamanho da fonte */
+    font-weight: 600; /* texto semi-negrito */
+    display: block; /* faz o botão ocupar uma linha */
+    position: relative; /* permite posicionar o ícone */
+    text-align: center; /* centraliza o texto */
+    transition: 0.2s; /* animação suave */
     box-shadow:
-        inset 0 0 10px rgba(0, 0, 0, 0.35),
-        0 6px 12px rgba(0, 0, 0, 0.35);
+        inset 0 0 10px rgba(0, 0, 0, 0.35), /* sombra interna */
+        0 6px 12px rgba(0, 0, 0, 0.35); /* sombra externa */
 }
 
+/* efeito ao passar o mouse */
 .btn:hover {
-    transform: scale(1.03);
+    transform: scale(1.03); /* aumenta levemente o botão */
 }
 
 /* =========================
-   BOTÃO DOURADO (PRINCIPAL)
+   BOTÃO DOURADO (DESTAQUE)
    ========================= */
 .btn-gold {
-    background: linear-gradient(135deg, #f9e27d, #f2c94c);
-    color: #3a2c00;
-    border-color: #e0b800;
+    background: linear-gradient(135deg, #f9e27d, #f2c94c); /* degradê dourado */
+    color: #3a2c00; /* cor do texto */
+    border-color: #e0b800; /* borda mais escura */
     box-shadow:
-        inset 0 0 12px rgba(255, 255, 255, 0.35),
-        0 8px 16px rgba(0, 0, 0, 0.45);
+        inset 0 0 12px rgba(255, 255, 255, 0.35), /* brilho interno */
+        0 8px 16px rgba(0, 0, 0, 0.45); /* sombra forte */
 }
 
+/* hover do botão dourado */
 .btn-gold:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* aumenta mais que os outros */
 }
 
 /* =========================
-   ÍCONE NO BOTÃO
+   ÍCONE DENTRO DO BOTÃO
    ========================= */
 .icon-btn {
-    position: absolute;
-    left: 22px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 28px;
-    height: 28px;
-    pointer-events: none;
+    position: absolute; /* posicionamento livre */
+    left: 22px; /* ícone mais próximo da borda esquerda */
+    top: 50%; /* centraliza verticalmente */
+    transform: translateY(-50%); /* ajuste fino do centro */
+    width: 28px; /* largura do ícone */
+    height: 28px; /* altura do ícone */
+    pointer-events: none; /* evita clique no ícone */
 }
 
 /* =========================
    FRASE DE DESTAQUE
    ========================= */
 .frase-destaque {
-    font-size: 18px;
-    color: white;
-    margin-top: 35px;
-    font-style: italic;
-    line-height: 1.6;
-    padding: 0 20px;
+    font-size: 18px; /* tamanho da fonte */
+    color: white; /* cor branca */
+    margin-top: 35px; /* espaço acima da frase */
+    font-style: italic; /* texto em itálico */
+    line-height: 1.6; /* espaço entre linhas */
+    padding: 0 20px; /* evita texto colado na borda */
 }
 
 /* =========================
    ÍCONES SOCIAIS
    ========================= */
 .icons {
-    margin-top: 40px;
+    margin-top: 40px; /* espaço acima dos ícones */
 }
 
 .icons img {
-    width: 40px;
-    margin: 0 15px;
-    filter: invert(1);
+    width: 40px; /* tamanho do ícone */
+    margin: 0 15px; /* espaço entre ícones */
+    filter: invert(1); /* deixa o ícone branco */
 }
 
 /* =========================
    RODAPÉ
    ========================= */
 footer {
-    margin-top: 40px;
-    font-size: 14px;
-    opacity: 0.8;
-    color: #fff;
+    margin-top: 40px; /* espaço acima do rodapé */
+    font-size: 14px; /* tamanho da fonte */
+    opacity: 0.8; /* transparência */
+    color: #fff; /* cor branca */
 }
 
 /* =========================
-   RESPONSIVIDADE
+   RESPONSIVIDADE (CELULAR)
    ========================= */
 @media (max-width: 480px) {
 
     .logo {
-        width: 150px;
+        width: 150px; /* logo menor no celular */
         height: 150px;
     }
 
     h2 {
-        font-size: 28px;
+        font-size: 28px; /* título menor */
     }
 
     p.sub {
-        font-size: 16px;
+        font-size: 16px; /* texto menor */
         margin-bottom: 30px;
     }
 
     .btn {
-        max-width: 340px;
+        max-width: 340px; /* botão menor */
         font-size: 15px;
-        padding-left: 50px;
+        padding-left: 50px; /* mantém espaço do ícone */
     }
 
     .icon-btn {
-        width: 24px;
+        width: 24px; /* ícone menor */
         height: 24px;
-        left: 20px;
+        left: 20px; /* ícone mais próximo da borda */
     }
 
-     .frase-destaque {
+    .frase-destaque {
+        margin-top: 18px; /* menos espaço */
         line-height: 1.4;
-        margin-top: 18px;
     }
-    
+
     .icons img {
-        width: 32px;
+        width: 32px; /* ícones menores */
         margin: 0 10px;
     }
 
     footer {
-        font-size: 12px;
+        font-size: 12px; /* rodapé menor */
     }
 }
