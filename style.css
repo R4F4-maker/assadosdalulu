@@ -24,6 +24,35 @@ body {
     border-radius: 18px; /* cantos arredondados */
 }
 
+
+/* =========================
+   INFO TOPO (DIAS E HORÁRIO)
+   ========================= */
+.info-topo {
+    display: flex;                 /* coloca lado a lado */
+    justify-content: space-between;/* esquerda e direita */
+    align-items: center;           /* alinha verticalmente */
+    
+    font-size: 18px;               /* tamanho do texto */
+    color: #ffffff;              /* cor branca */
+    opacity: 0.9;                  /* leve transparência */
+    margin-top: 20px;              /* espaço acima da frase */
+
+    margin-bottom: -10px;            /* espaço até a logo */
+    font-style: italic;            /* texto em itálico */
+    padding: 0 20px;               /* afastamento das bordas */
+}
+
+/* Texto da esquerda */
+.info-topo .dias {
+    text-align: left;
+}
+
+/* Texto da direita */
+.info-topo .horario {
+    text-align: right;
+}
+
 /* =========================
    LOGO
    ========================= */
