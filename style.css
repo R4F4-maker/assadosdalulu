@@ -20,7 +20,7 @@ body {
     max-width: 480px; /* largura máxima no celular */
     margin: 0 auto; /* centraliza o container */
     padding: 20px 16px; /* espaço interno */
-    background: rgba(0, 0, 0, 0.35); /* fundo escuro translúcido */
+    background: rgba(0, 0, 0, 0.199); /* fundo escuro translúcido */
     border-radius: 18px; /* cantos arredondados */
 }
 
@@ -43,6 +43,7 @@ h2 {
     margin: 0; /* remove margem padrão */
     font-weight: 700; /* texto em negrito */
     color: #f9c402; /* cor dourada */
+    margin-bottom: 2px;
 }
 
 /* =========================
@@ -51,7 +52,7 @@ h2 {
 p.sub {
     font-size: 20px; /* tamanho da fonte */
     color: white; /* cor branca */
-    margin-top: 6px; /* espaço acima do texto */
+    margin-top: 4px; /* espaço acima do texto */
     margin-bottom: 25px; /* espaço abaixo */
     line-height: 1.2; /* espaço entre linhas */
 }
@@ -66,7 +67,7 @@ p.sub {
     color: white; /* cor do texto */
     border: 3px solid #f9c402; /* borda dourada */
     border-radius: 15px; /* cantos arredondados */
-    padding: 16px 16px 16px 50px; /* espaço interno (lado esquerdo maior p/ ícone) */
+    padding: 16px; /* espaço interno (lado esquerdo maior p/ ícone) */
     margin: 15px auto; /* espaço entre os botões */
     text-decoration: none; /* remove sublinhado do link */
     font-size: 16px; /* tamanho da fonte */
@@ -82,7 +83,7 @@ p.sub {
 
 /* efeito ao passar o mouse */
 .btn:hover {
-    transform: scale(1.03); /* aumenta levemente o botão */
+    transform: scale(1.1); /* aumenta levemente o botão */
 }
 
 /* =========================
@@ -99,7 +100,7 @@ p.sub {
 
 /* hover do botão dourado */
 .btn-gold:hover {
-    transform: scale(1.05); /* aumenta mais que os outros */
+    transform: scale(1.1); /* aumenta mais que os outros */
 }
 
 /* =========================
@@ -170,9 +171,10 @@ footer {
     }
 
     .btn {
-        max-width: 340px; /* botão menor */
+        max-width: 300px; /* botão menor */
         font-size: 15px;
         padding-left: 50px; /* mantém espaço do ícone */
+        padding: 16px 16px 16px 16px;
     }
 
     .icon-btn {
