@@ -24,23 +24,23 @@ body {
     border-radius: 18px; /* cantos arredondados */
 }
 
-
 /* =========================
    INFO TOPO (DIAS E HORÁRIO)
    ========================= */
 .info-topo {
-    display: flex;                 /* coloca lado a lado */
-    justify-content: space-between;/* esquerda e direita */
-    align-items: center;           /* alinha verticalmente */
-    
-    font-size: 18px;               /* tamanho do texto */
-    color: #ffffff;              /* cor branca */
-    opacity: 0.9;                  /* leve transparência */
-    margin-top: 20px;              /* espaço acima da frase */
+    display: flex;                  /* coloca os textos lado a lado */
+    justify-content: space-between; /* esquerda e direita */
+    align-items: center;            /* alinha verticalmente */
 
-    margin-bottom: -10px;            /* espaço até a logo */
-    font-style: italic;            /* texto em itálico */
-    padding: 0 20px;               /* afastamento das bordas */
+    font-size: 14px;                /* 🔽 mais elegante no topo */
+    color: #ffffff;
+    opacity: 0.85;
+
+    margin-top: 8px;                /* 🔽 menos espaço acima */
+    margin-bottom: 6px;             /* 🔼 aproxima da logo (sem negativo) */
+
+    font-style: italic;
+    padding: 0 12px;                /* 🔽 cola mais nas bordas */
 }
 
 /* Texto da esquerda */
@@ -184,6 +184,11 @@ footer {
    RESPONSIVIDADE (CELULAR)
    ========================= */
 @media (max-width: 480px) {
+    .info-topo {
+        font-size: 13px;
+        padding: 0 8px;
+    }
+}
 
     .logo {
         width: 150px; /* logo menor no celular */
