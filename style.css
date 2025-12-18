@@ -60,7 +60,7 @@ body {
     width: 200px; /* largura da logo */
     height: 200px; /* altura da logo */
     border-radius: 50%; /* deixa a logo redonda */
-    margin: 50px auto 10px; /* espaço: topo | lados | baixo */
+    margin: 10px auto 10px; /* espaço: topo | lados | baixo */
     object-fit: cover; /* ajusta imagem sem distorcer */
 }
 
@@ -206,7 +206,7 @@ footer {
     }
 
     .btn {
-        max-width: 380px; /* botão menor */
+        max-width: 400px; /* botão menor */
         font-size: 15px;
         padding-left: 50px; /* mantém espaço do ícone */
         padding: 16px 16px 16px 16px;
