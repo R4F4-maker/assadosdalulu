@@ -37,10 +37,10 @@ body {
     opacity: 0.85;
 
     margin-top: 8px;                /* 🔽 menos espaço acima */
-    margin-bottom: 6px;             /* 🔼 aproxima da logo (sem negativo) */
+    margin-bottom: 0px;             /* 🔼 aproxima da logo (sem negativo) */
 
     font-style: italic;
-    padding: 0 12px;                /* 🔽 cola mais nas bordas */
+    padding: 0 50px;                /* 🔽 cola mais nas bordas */
 }
 
 /* Texto da esquerda */
@@ -60,7 +60,7 @@ body {
     width: 200px; /* largura da logo */
     height: 200px; /* altura da logo */
     border-radius: 50%; /* deixa a logo redonda */
-    margin: 20px auto 10px; /* espaço: topo | lados | baixo */
+    margin: 50px auto 10px; /* espaço: topo | lados | baixo */
     object-fit: cover; /* ajusta imagem sem distorcer */
 }
 
@@ -82,7 +82,7 @@ p.sub {
     font-size: 20px; /* tamanho da fonte */
     color: white; /* cor branca */
     margin-top: 4px; /* espaço acima do texto */
-    margin-bottom: 25px; /* espaço abaixo */
+    margin-bottom: 10px; /* espaço abaixo */
     line-height: 1.2; /* espaço entre linhas */
 }
 
@@ -91,7 +91,7 @@ p.sub {
    ========================= */
 .btn {
     width: 85%; /* largura do botão */
-    max-width: 420px; /* limite máximo */
+    max-width: 450px; /* limite máximo */
     background: rgba(255, 255, 255, 0.11); /* fundo transparente */
     color: white; /* cor do texto */
     border: 3px solid #f9c402; /* borda dourada */
@@ -161,7 +161,7 @@ p.sub {
    ÍCONES SOCIAIS
    ========================= */
 .icons {
-    margin-top: 40px; /* espaço acima dos ícones */
+    margin-top: 30px; /* espaço acima dos ícones */
 }
 
 .icons img {
@@ -174,7 +174,7 @@ p.sub {
    RODAPÉ
    ========================= */
 footer {
-    margin-top: 40px; /* espaço acima do rodapé */
+    margin-top: 30px; /* espaço acima do rodapé */
     font-size: 14px; /* tamanho da fonte */
     opacity: 0.8; /* transparência */
     color: #fff; /* cor branca */
@@ -201,11 +201,12 @@ footer {
 
     p.sub {
         font-size: 16px; /* texto menor */
-        margin-bottom: 30px;
+        margin-bottom: 10px; /* espaço abaixo */
+
     }
 
     .btn {
-        max-width: 300px; /* botão menor */
+        max-width: 380px; /* botão menor */
         font-size: 15px;
         padding-left: 50px; /* mantém espaço do ícone */
         padding: 16px 16px 16px 16px;
@@ -229,5 +230,4 @@ footer {
 
     footer {
         font-size: 12px; /* rodapé menor */
-    }
 }
