@@ -76,6 +76,22 @@ h2 {
 }
 
 /* =========================
+   SOMENTE DELIVERY
+   ========================= */
+.only-delivery {
+    margin-top: 2px;          /* espaço do @ */
+    margin-bottom: 18px;      /* espaço da descrição */
+    
+    font-size: 12px;          /* tamanho discreto */
+    font-weight: 600;         /* destaque */
+    letter-spacing: 1px;      /* espaçamento das letras */
+    
+    color: #FFD700;           /* dourado padrão */
+    text-align: center;       /* centralizado */
+    text-transform: uppercase;/* tudo em maiúsculo */
+}
+
+/* =========================
    SUBTÍTULO / DESCRIÇÃO
    ========================= */
 p.sub {
@@ -186,7 +202,7 @@ footer {
 @media (max-width: 480px) {
     .info-topo {
         font-size: 13px;
-        padding: 0 30px;
+        padding: 0 20px;
     }
 }
 
